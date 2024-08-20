@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+  .button{
+    @apply border px-5 md:px-10 py-2.5 rounded font-semibold transition-all duration-200 ease-out
+ }
+}
+/* Scrollbar'ning butun kengligi */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Scrollbar track (orqa fon) */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Scrollbar handle (scroll tugmasi) */
+::-webkit-scrollbar-thumb {
+  background-color: blue;
+  border-radius: 10px;
+}
+
+/* Scroll tugmasiga hover qilganda rangi */
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 255, 0.5);
+}
+
+@layer utilities {
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
